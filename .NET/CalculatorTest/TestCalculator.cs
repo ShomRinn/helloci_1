@@ -34,17 +34,6 @@ namespace CalculatorTest
         [Test]
         public void OneCanSubstracPositiveIntegertFromZero() => Assert.That(Calc.Substract(0, 100), Is.EqualTo(-100));
 
-        [Category("SubstractTests")]
-        [Test]
-        public void OneCanSubstracNegativeIntegertFromZero() => Assert.That(Calc.Substract(0, -100), Is.EqualTo(99));
-
-        [Ignore("Ignoring")]
-        [Category("SubstractTests")]
-        [Test]
-        public void OneCanDevideByZero() => Assert.That(Calc.Devide(1, 0), Is.EqualTo(0));
-
-        [Category("Configuration")]
-        [Test]
         public void OneCanReadAppConfig()
         {
             var config = new ConfigurationBuilder()
